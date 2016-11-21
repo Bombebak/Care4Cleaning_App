@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent"
+    android:id="@+id/mainContent"
+    style="@style/AppTheme"
+>
+
+        <LinearLayout
+            android:layout_weight="0"
+            android:layout_height="fill_parent"
+            android:layout_width="0dp">
+            <TextView
+                style="@style/h1_text"
+                android:background="@color/colorPrimaryFont"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/fillOutForms"
+                android:layout_centerInParent="true"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_height="fill_parent"
+            android:layout_width="0dp"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/imagePrev"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Imageprev"
+                android:layout_gravity="center"
+                android:adjustViewBounds="true"
+                android:maxHeight="300dp"
+                android:layout_marginTop="10dp"
+
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal">
+
+                <ImageView
+                    style="@style/buttons"
+                    android:scaleType="centerInside"
+                    android:background="@drawable/buttons"
+                    android:id="@+id/btnFindPic"
+                    android:src="@drawable/search_folders_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+
+                    />
+
+                <ImageView
+                    style="@style/buttons"
+                    android:scaleType="centerInside"
+                    android:background="@drawable/buttons"
+                    android:id="@+id/btnPic"
+                    android:src="@drawable/camera_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+
+                    />
+
+            </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_height="fill_parent"
+            android:layout_width="0dp"
+            android:orientation="vertical">
+            <TextView
+                style="@style/label_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lbl_caseId"/>
+
+            <EditText
+                android:id="@+id/txtCaseId"
+
+                android:inputType="number"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginRight="15dp"
+                android:layout_centerVertical="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="start"
+                android:background="@drawable/edittextstyle"/>fff
+
+            <TextView
+                style="@style/label_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lbl_description"/>
+
+            <EditText
+                android:id="@+id/txtDescription"
+                android:lines="4"
+                android:minLines="3"
+                android:gravity="top|left"
+                android:maxLines="10"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginRight="15dp"
+                android:layout_centerVertical="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="start"
+
+                android:background="@drawable/edittextstyle"/>
+
+            <Button
+                style="@style/buttons"
+                android:scaleType="centerInside"
+                android:background="@drawable/buttons"
+                android:id="@+id/btnSubmit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_submit"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+    </LinearLayout>

@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Care4Cleaning</string>
+    <string name="action_settings">Settings</string>
+    <string name="btn_signup">Sign up</string>
+    <string name="btn_submit">Upload</string>
+    <string name="fillOutForms">Please fill out the fields</string>
+    <string name="lbl_caseId">Case ID</string>
+    <string name="lbl_description">Description</string>
+    <string name="ok"> Ok</string>
+    <string name="cancel">Cancel</string>
+    //Validations
+    <string name="imageEmpty">You did not attach an image</string>
+    <string name="caseIdEmpty">You did not enter a case ID</string>
+    <string name="descriptionEmpty">You did not enter a description</string>
+    <string name="usernameEmpty">You did not enter a username</string>
+    <string name="permision_available_camera">Camera Permission has been granted. Preview can now be opened.</string>
+    <string name="permissions_not_granted">Permissions were not granted.</string>
+    <string name="permission_camera_rationale">Camera permission is needed to show the camera preview.</string>
+</resources>
